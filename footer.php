@@ -1,6 +1,8 @@
 <?php
 #
 ?>
+<div class="clr"></div>
+<div class="h_left" style="height:92px;"></div>
 <div class="footer">
 	<div class="link">
 		 <div><span><a href="www.baidu.com">百度</a></span></div>
@@ -10,6 +12,7 @@
 		<div class="">Copyright 2008 donggeejiao.com All Rights Reserved 站长统计站长统计</div>
 	</div><!--police -->
 </div><!--footer-->
+<div class="h_right" style="height:92px;"></div>
 </div><!--main-->
 </div><!--page-->
 </body>

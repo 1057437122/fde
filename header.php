@@ -23,14 +23,15 @@
 			</div>
 			<div class="right"><img src="<?php  bloginfo('template_directory');?>/img/onright.gif" /></div>
 		</div><!-- on -->
-		<div class="h_left" style="height:146px;"  ></div>
+		<div class="h_left" style="height:72px;"  ></div>
 		<div class="mid">
 			<div class="menu_mid">
 				<a href="<?php bloginfo('siteurl');?>"><div class="logo"><img src="<?php bloginfo('template_directory'); ?>/img/logo.jpg" /></div></a>
 				<div class="microcode"><img src="<?php bloginfo('template_directory'); ?>/img/microcode.jpg" /></div>
 			</div>
 		</div><!--mid-->
-		<div class="h_right" style="height:146px;" ></div>
+		<div class="h_right" style="height:72px;" ></div>
+		<div class="h_left" style="height:60px;"></div>
 		<div class="menu_box">
 			<div class="mainNav">
 			<?php 
@@ -56,6 +57,7 @@
 			?>
 			</div><!-- main nav-->
 		</div><!-- menu box -->
-		
+		<div class="h_right" style="height:60px;" ></div>
 	</div><!--header-->
+	<div class="clr"></div>
 	<div class="main">

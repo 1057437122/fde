@@ -2,6 +2,7 @@
 #
 get_header();
 ?>
+
 <script>
 // Slides
 $(document).ready(function(){
@@ -32,7 +33,8 @@ $(document).ready(function(){
 	});
 });
 </script>
-
+<div class="clr"></div>
+<div class="h_left" style="height:390px;"></div>
 <div class="slider">
 <?php $sliderspost=get_posts('meta_key=slider&numberposts=10');?><!-- get slider posts-->
 <?php if($sliderspost):?>
@@ -58,7 +60,11 @@ $(document).ready(function(){
 	</div><!--slider_frame-->
 <?php endif;?>
 </div><!--slider -->
+<div class="h_right" style="height:390px;"></div>
 
+<div class="clr"></div>
+
+<div class="h_left" style="height:136px;"></div>
 <div class="mbody">
 	<div class="box">
 		<div class="news">
@@ -79,6 +85,8 @@ $(document).ready(function(){
 	</div>
 	<div class="box"></div>
 </div><!-- show body -->
+<div class="h_right" style="height:136px;"></div>
+<div class="clr"></div>
 <?php 
 get_footer();
 ?>

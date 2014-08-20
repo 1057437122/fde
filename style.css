@@ -41,8 +41,8 @@ body{background:#f5edd8;}
 .header .on .middle{float:left;background:url(./img/onmid.gif);width:963px;height:14px;}
 .header .on .right{float:right;width:17px;height:14px;background:url(./img/onright.gif);}
 
-.header .h_left{float:left;background:url(./img/midleft.gif);width:7px;}
-.header .h_right{float:right;background:url(./img/midright.gif);width:7px;}
+.h_left{float:left;background:url(./img/midleft.gif);width:7px;}
+.h_right{float:right;background:url(./img/midright.gif);width:7px;}
 .header .mid{background:rgb(250,245,235);}
 .header .mid .logo{height:72px;padding-left:54px;float:left;width:420px;background:rgb(250,245,235);}
 .header .mid .logo img{width:51px;height:51px;}
@@ -57,7 +57,7 @@ body{background:#f5edd8;}
 
 /*main*/
 .main {}
-.mbody{padding:0 20px;overflow:hidden;}
+.mbody{padding:0 10px;overflow:hidden;width:969px;float:left;}
 .main .mbody .box{width:50%;float:left;}
 .main .mbody .box .news{}
 .main .mbody .n_header{overflow:hidden;border-bottom:solid 1px grey;padding:0 20px 5px;}
@@ -70,16 +70,25 @@ body{background:#f5edd8;}
 .main .mbody .n_body .info li{padding:4px 0 4px;font-size:12px;}
 .main .mbody .n_body .info .dot{font-weight: 900;float:left;color:red;padding:0 5px;}
 
-.cat_pic{width:100%;height:40px;}
+/* category page */
+.cat_header{float:left;overflow:hidden;}
+.cat_header .cat_pic{}
+.cat_body{overflow:hidden;float:left;padding-top:10px;}
+.cat_body .cat_index{float:left;overflow:hidden;width:230px;}
+.cat_body .cat_index .sub_cats{overflow:hidden;background:url(./img/leftbg.jpg);}
+.cat_body .cat_index .sub_cats ul{padding-left:30px;}
+.cat_body .cat_index .sub_cats ul li{padding:2.5px 0 30px 2.5px;}
 
 
 /*footer*/
-.footer{margin-top:40px;}
+.footer{margin-top:40px;width:989px;float:left;overflow:hidden;}
 .footer .link{padding:5px  100px;background:#7a7637;}
 .footer .police{padding:20px 60px;font-size:12px;line-height:13px;}
+
 /*slide
 .slides{width:640px;height:350px;}*/
 /*** Slides ***/
+.slider{width:989px;float:left;}
 .slider_frame{padding:10px;overflow:hidden;filter:alpha(opacity=50)}
 .slides{width:968px; height:330px; margin:0 0 40px; position:relative;float:left;}
 .slides img{max-width:100%;width:968px;height:330px;border:none;padding:0;}
