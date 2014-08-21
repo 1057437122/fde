@@ -2,6 +2,7 @@
 #
 ?>
 <div class="clr"></div>
+</div><!--main-->
 <div class="h_left" style="height:92px;"></div>
 <div class="footer">
 	<div class="link">
@@ -13,7 +14,6 @@
 	</div><!--police -->
 </div><!--footer-->
 <div class="h_right" style="height:92px;"></div>
-</div><!--main-->
 </div><!--page-->
 </body>
 </html>

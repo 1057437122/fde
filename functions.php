@@ -52,7 +52,7 @@ function show_sub_cats($sub_class='',$sub_id=''){
 		foreach($subs as $sub){
 			if(!empty($sub)){
 				$lnk=get_category_link($sub->term_id);
-				$ret_str.="><li><a href=".$lnk.'>'.$sub->name."</a></li";
+				$ret_str.="><li id=".$sub->term_id."><a href=".$lnk.'>'.$sub->name."</a></li";
 			}
 		}
 		$ret_str.="></ul>";

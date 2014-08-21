@@ -29,14 +29,16 @@ get_header();
 			<?php single_cat_title();//the_category(); ?>
 		</div>
 		<div class="list_body">
-			<ul>
+			
 			<?php if(have_posts()) : ?><?php while(have_posts()) : the_post(); ?>
-				<li class="cont"><a href="<?php the_permalink(); ?>" ><div class="date" >>>[<?php the_date('Y-m-d'); ?>]</div><?php the_title(); ?></a></li>
+				<div class="content">
+					<?php get_template_part( 'content/single', get_post_format() ); ?>
+				</div>
 			<?php endwhile; ?>
 			<?php else:?>
 			<div class="nothing">没有找到相关内容~</div>
 			<?php endif; ?>
-			</ul>
+			
 		</div><!-- posts -->
 	</div><!-- list all the posts under this category -->
 </div>

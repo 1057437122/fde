@@ -56,7 +56,7 @@ body{background:#f5edd8;}
 .header .menu_box .mainNav ul li .sub-menu{display:none;}
 
 /*main*/
-.main {}
+.main {background:url(./img/pagebk.png);padding-left:7px;}
 .mbody{padding:0 10px;overflow:hidden;width:969px;float:left;}
 .main .mbody .box{width:50%;float:left;}
 .main .mbody .box .news{}
@@ -73,13 +73,24 @@ body{background:#f5edd8;}
 /* category page */
 .cat_header{float:left;overflow:hidden;}
 .cat_header .cat_pic{}
-.cat_body{overflow:hidden;float:left;padding-top:10px;}
-.cat_body .cat_index{float:left;overflow:hidden;width:230px;}
-.cat_body .cat_index .sub_cats{overflow:hidden;background:url(./img/leftbg.jpg);}
+.cat_body{overflow:hidden;float:left;padding-top:10px;font-size:12px;}
+.cat_body .cat_index{float:left;overflow:hidden;width:230px;background:url(./img/leftbg.jpg);height:300px;}
+.cat_body .cat_index .sub_cats{overflow:hidden;}
 .cat_body .cat_index .sub_cats ul{padding-left:30px;}
-.cat_body .cat_index .sub_cats ul li{padding:2.5px 0 30px 2.5px;}
+.cat_body .cat_index .sub_cats ul li{padding:5px 0 5px 0;}
 
-
+.cat_body .cat_list{float:left;overflow:hidden;padding:10px 0 0 20px;}
+.cat_body .cat_list .list_body{float:left;padding-top:10px;}
+.cat_body .cat_list .list_body ul{line-height:25px;}
+.cat_body .cat_list .list_body ul li{border-bottom:1px #cdcdcd dashed;width:702px;}
+.cat_body .cat_list .list_body ul li .date{float:left;width:120px;}
+.cat_body .cat_list .list_body .content{width:702px;}
+.cat_body .cat_list .list_body .content .cont_title{padding-bottom:10px;font-size:20px;text-align:center;}
+.cat_body .cat_list .list_body .content .cont_info{padding-left:250px;padding-top:5px;border-top:1px #cdcdcd dashed;text-align:center;}
+.cat_body .cat_list .list_body .content .cont_info .author{float:left;padding-right:20px;}
+.cat_body .cat_list .list_body .content .cont_info .date{float:left;padding-right:20px;}
+.cat_body .cat_list .list_body .content .cont_info .cat{float:left;}
+.cat_body .cat_list .list_body .content .conts{padding:10px;line-height:20px;}
 /*footer*/
 .footer{margin-top:40px;width:989px;float:left;overflow:hidden;}
 .footer .link{padding:5px  100px;background:#7a7637;}
