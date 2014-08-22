@@ -3,11 +3,7 @@
 get_header();
 ?>
 
-<div class="cat_header">
-	<div class="cat_pic"  >
-		<img src="<?php bloginfo('template_directory'); ?>/img/cat_<?php the_category_ID(); ?>.png" alt="" />
-	</div><!--cat pic-->
-</div>
+
 
 <div class="clr"></div>
 
@@ -29,10 +25,21 @@ get_header();
 			<?php single_cat_title();//the_category(); ?>
 		</div>
 		<div class="list_body">
-			<ul>
-			<?php get_template_part('cat/cat',get_post_format()); ?>
+			<div class="content">
+			<?php if(have_posts()) : ?><?php while(have_posts()) : the_post(); ?>
 			
-			</ul>
+				<div class="cont_title"><?php the_title(); ?></div>
+				<div class="cont_info">
+					<div class="author"><?php the_author(); ?></div>
+					<div class="date"><?php the_date('Y-m-d'); ?></div>
+					<div class="clr"></div>
+				</div>
+				<div class="conts"><?php the_content(); ?></div>
+			<?php endwhile; ?>
+			<?php else:?>
+			<div class="nothing">没有找到相关内容~</div>
+			<?php endif; ?>
+			</div><!--content-->
 		</div><!-- posts -->
 	</div><!-- list all the posts under this category -->
 </div>
