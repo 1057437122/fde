@@ -7,8 +7,8 @@
 				</div>
 			</div><!-- thumbnail -->
 			<div class="intro">
-				<div class="pro_name"></div>
-				<div class="pro_"></div>
+				<div class="pro_name"><?php the_title(); ?></div>
+				<div class="pro_info"></div>
 			</div><!-- intro -->
 		</a>
 	</li>

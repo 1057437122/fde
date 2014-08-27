@@ -60,3 +60,13 @@ function show_sub_cats($sub_class='',$sub_id=''){
 	}
 }
 add_filter('show_sub_catgory','show_sub_cats',10);
+
+function get_show_pics(){//set default get 3 pictures as the show picture
+	global $post,$posts;
+	$pat='/<img.+?src=[\'"]([^\'"]+)[\'"].+?>/i';
+	$output=preg_match_all($pat,$post->post_content,$matches);
+	if(!empty($matches[1])){
+		return $matches[1];
+	}
+	return FALSE;
+}

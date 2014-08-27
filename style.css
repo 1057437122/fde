@@ -30,7 +30,7 @@ ol, ul {	list-style: none;}
 blockquote, q {	quotes: none;}
 blockquote:before, blockquote:after,q:before, q:after {	content: '';	content: none;}
 table {	border-collapse: collapse;	border-spacing: 0;}
-a{color:#666666;}
+a{color:#666666;display:block;}
 a:hover{color:red;}
 h1, h2, h3, h4, h5, h6 {	clear: both;	font-weight: normal;}
 .clr{clear:both;}
@@ -97,10 +97,22 @@ body{background:#f5edd8;}
 .cat_body .cat_list .list_body .content .cont_info .cat{float:left;}
 .cat_body .cat_list .list_body .content .conts{padding:10px;line-height:20px;}
 
+
+/* content for imgs */
+.cat_body   .products{}
+.cat_body   .products .product_title{padding-left:20px;font-size:35px;line-height:35px;height:35px;border-bottom:1px solid dashed grey;}
+.cat_body   .products .product_info{padding-left:20px;}
+.cat_body   .products .product_info .author{float:left;}
+.cat_body   .products .product_info .date{float:left;}
+.cat_body   .products .product_info .cat{float:left;}
+
 /*category for imgs */
-.cat_body .cat_list .list_body ul .cont_img{width:150px;}
+.cat_body .cat_list .list_body ul .cont_img{width:150px;float:left;}
 .cat_body .cat_list .list_body ul .cont_img .thumbnail{}
-.cat_body .cat_list .list_body ul .cont_img .thumbnail .pic{padding:10px;}
+.cat_body .cat_list .list_body ul .cont_img .thumbnail .pic{padding:10px;width:130px;height:130px;overflow:hidden;}
+
+.cat_body .cat_list .list_body ul .cont_img .intro .pro_name{}
+.cat_body .cat_list .list_body ul .cont_img .intro .pro_info{}
 
 /*footer*/
 .footer{margin-top:40px;width:989px;float:left;overflow:hidden;}
