@@ -9,10 +9,7 @@
 <?php bloginfo('name');?>
 </title>
 <link rel="stylesheet" type="text/css" href="<?php bloginfo('template_directory');?>/style.css" />
-<?php if(is_home() || is_front_page()){ //if is index show the slider ?>
-	<script type="text/javascript" src="<?php bloginfo('template_directory');?>/js/jquery-1.10.2.min.js"></script>
-	<script type="text/javascript" src="<?php bloginfo('template_directory'); ?>/js/slides.jquery.js"></script>
-<?php } ?>
+<script type="text/javascript" src="<?php bloginfo('template_directory');?>/js/jquery-1.10.2.min.js"></script>
 </head>
 <body>
 <div class="page">

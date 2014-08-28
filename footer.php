@@ -17,3 +17,13 @@
 </div><!--page-->
 </body>
 </html>
+<?php if(is_home() || is_front_page()){ //if is index show the slider ?>
+	
+	<script type="text/javascript" src="<?php bloginfo('template_directory'); ?>/js/slides.jquery.js"></script>
+<?php }elseif(is_single()){?>
+
+	<script type="text/javascript" src="<?php bloginfo('template_directory');?>/js/zoom.js"></script>
+	<script type="text/javascript" src="<?php bloginfo('template_directory');?>/js/common.js"></script>
+<?php 
+} 
+?>
