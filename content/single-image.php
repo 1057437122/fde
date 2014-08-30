@@ -1,41 +1,23 @@
 <?php $need_js=TRUE; ?>
 <div class="products">
 	<?php if(have_posts()) : ?><?php while(have_posts()) : the_post(); ?>
-		
+	<span class="templine">   </span>
 	<div class="product_title"><?php the_title(); ?></div>
-	<hr>
-	<?php $ret=get_show_pics();//the pictures uploaded must be more than 3 ~otherwise... ?>
-	<div class="product_info">
-		<div class="author"><?php the_author(); ?></div>
-		<div class="date"><?php the_date('Y-m-d'); ?></div>
-		<div class="cat"><?php the_category(','); ?></div>
-		<div class="clr"></div>
-	</div>
+
+	<?php $ret=get_show_pics(); //first 3 pictures as the show pictures ... ?>
+
 	<div class="pre_view">
-		<aside class="nc-gallery">
-			<div class="zoom-section">
-				<div class="zoom-small-image">
-					<span class="thumb size310">
-						<a href="" class="nc-zoom" id="zoom1" rel="position:'inside',showTitle:false"><img src="<?php echo $ret[0]; ?>" alt="" title=""></a>
-					</span>
-				</div><!-- zoom-small-image-->
-				<nav class="zoom-desc">
-					<ul>
-					<!-- foreach -->
-					<?php foreach($ret as $key=>$pic): ?>
-						<li>
-							<a href="<?php echo $pic; ?>" class="nc-zoom-gallery <?php if($key==0){ ?>hovered<?php }?>" title="" rel="useZoom:'zoom1',smallImage:'small_url'" >
-								<span class="thumb size40">
-								<i></i>
-								<img src="<?php echo $pic; ?>" alt="" onload="javascript:DrawImage(this,40,40);">
-								</span><b></b>
-							</a>
-						</li>
-					<?php endforeach; ?>
-					</ul>
-				</nav><!-- zoom desc -->
-			</div><!-- zoom section -->
-		</aside><!-- nc gallery-->
+		<div id="zoomWarp">
+			<div id="smallwarp">
+				<img src="<?php echo $ret[0]; ?>" id="smallImg" zoom="<?php echo $ret[0]; ?>"/>
+			</div>
+			<ul id="minImg">
+			<?php foreach($ret as $pic): ?>
+				<li><img src="<?php echo $pic; ?>" width="70" height="70" zoom="<?php echo $pic; ?>"></li>
+			<?php endforeach; ?>
+		
+			</ul>
+		</div><!-- zoomWarp-->
 	</div><!--pre view-->
 	<div class="product_cont"><?php the_content(); ?></div>
 		
@@ -44,6 +26,3 @@
 	<div class="nothing">没有找到相关内容~</div>
 	<?php endif; ?>
 </div>
-
-
-

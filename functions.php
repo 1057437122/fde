@@ -65,8 +65,16 @@ function get_show_pics(){//set default get 3 pictures as the show picture
 	global $post,$posts;
 	$pat='/<img.+?src=[\'"]([^\'"]+)[\'"].+?>/i';
 	$output=preg_match_all($pat,$post->post_content,$matches);
+	$dftpic=site_url().'/static/img/dftpic.jpg';
+	$ret=Array();
 	if(!empty($matches[1])){
-		return $matches[1];
+		// return $matches[1];
+		
+		$ret[0]=$matches[1][0];
+		isset($matches[1][1]) ? $ret[1]=$matches[1][1] :  $ret[1]=$dftpic;
+		isset($matches[1][20]) ? $ret[2]=$matches[1][2] :  $ret[1]=$dftpic;
+		
+		return $ret;
 	}
 	return FALSE;
 }
