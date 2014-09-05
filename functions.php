@@ -72,7 +72,7 @@ function get_show_pics(){//set default get 3 pictures as the show picture
 		
 		$ret[0]=$matches[1][0];
 		isset($matches[1][1]) ? $ret[1]=$matches[1][1] :  $ret[1]=$dftpic;
-		isset($matches[1][20]) ? $ret[2]=$matches[1][2] :  $ret[1]=$dftpic;
+		isset($matches[1][2]) ? $ret[2]=$matches[1][2] :  $ret[1]=$dftpic;
 		
 		return $ret;
 	}

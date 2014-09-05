@@ -8,18 +8,29 @@
 
 	<div class="pre_view">
 		<div id="zoomWarp">
-			<div id="smallwarp">
-				<img src="<?php echo $ret[0]; ?>" id="smallImg" zoom="<?php echo $ret[0]; ?>"/>
-			</div>
 			<ul id="minImg">
 			<?php foreach($ret as $pic): ?>
 				<li><img src="<?php echo $pic; ?>" width="70" height="70" zoom="<?php echo $pic; ?>"></li>
 			<?php endforeach; ?>
 		
 			</ul>
+			<div id="smallwarp">
+				<img src="<?php echo $ret[0]; ?>" id="smallImg" zoom="<?php echo $ret[0]; ?>"/>
+			</div>
 		</div><!-- zoomWarp-->
 	</div><!--pre view-->
-	<div class="product_cont"><?php the_content(); ?></div>
+	<div class="product_param">
+		<div class="container_header">
+			<ul>
+				<li class="on">商品详情</li>
+				<li >商品参数</li>
+			</ul>
+		</div><!--container header -->
+		<div class="container_body">
+			<div class="sub_con cur_sub"><?php the_content(); ?></div>
+			<div class="sub_con"><?php the_meta(); ?></div>
+		</div><!--container body -->
+	</div><!-- parameters -->
 		
 	<?php endwhile; ?>
 	<?php else:?>

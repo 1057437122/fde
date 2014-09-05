@@ -23,6 +23,7 @@
 <?php }elseif(is_single()){?>
 
 	<script type="text/javascript" src="<?php bloginfo('template_directory');?>/js/vvgbase.1.0.js"></script>
+	<script type="text/javascript" src="<?php bloginfo('template_directory');?>/js/tab.js"></script>
 	
 <script type="text/javascript">
     var zoomImg = function () {
@@ -46,8 +47,8 @@
                     "display":"none",
                     "width":"100px",
                     "height":"100px",
-                    "background":"#999",
-                    "border":"1px solid #000",
+                    "background":"#ff0",
+                    "border":"1px solid #666666",
                     "cursor":"crosshair",
                     "opacity":80,
                     "left":0,
@@ -60,7 +61,7 @@
                 bigDiv.id = "big";
                 VVG.setStyleById(bigDiv, {
                     "float":"left",
-                    "border":"1px solid #000",
+                    "border":"1px solid #666666",
                     "display":"none",
                     "width":"300px",
                     "height":"300px",
