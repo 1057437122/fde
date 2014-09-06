@@ -61,12 +61,11 @@
                 bigDiv.id = "big";
                 VVG.setStyleById(bigDiv, {
                     "float":"left",
-                    "border":"1px solid #666666",
+                    "border":"1px solid #c00",
                     "display":"none",
-                    "width":"300px",
-                    "height":"300px",
+                    "width":"384px",
+                    "height":"350px",
                     "overflow":"hidden",
-                    "border-left":"none",
                     "position":"relative",
                     "z-index":"100"
                 });

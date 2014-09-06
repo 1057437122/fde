@@ -162,7 +162,9 @@ body{background:#f5edd8;}
 * {margin: 0;padding: 0;}
 #zoomWarp {margin: 20px auto;overflow: hidden;}
 #smallwarp {position: relative;border: 1px solid #666666;width: 300px;height: 300px;overflow: hidden;float:left;}
-#minImg {display: inline;margin-right: 5px;float:left;}
-#minImg li {width: 70px;height: 70px;overflow: hidden;background: #ccc;margin-bottom: 5px;border: 2px solid #fff;cursor: pointer;list-style: none;}
+#smallwarp img{width:300px;height:300px;}
+#minImg {display: inline;margin-right: 5px;float:left;border:solid 1px #eaeaea;padding:10px 5px;}
+#minImg li {width: 70px;height: 70px;overflow: hidden;background: #ccc;margin-bottom: 10px;border: 2px solid #fff;cursor: pointer;list-style: none;}
+#minImg li:last{margin-bottom:none;}
 #minImg li:hover{border:2px solid red;}
 #minImg li.lastChild {margin-bottom: 0;}
