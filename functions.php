@@ -78,3 +78,22 @@ function get_show_pics(){//set default get 3 pictures as the show picture
 	}
 	return FALSE;
 }
+if(function_exists('register_sidebar_widget')){
+	register_sidebar( array(
+ 
+	'name' => __( 'Right Sider Bar', 'mytheme' ),
+	 
+	'id' => 'sidebar-1',
+	 
+	'description' => __( 'Mytheme SiderBar', 'mytheme' ),
+	 
+	'before_widget' => '<div class="widget"><aside id="%1$s">',
+	 
+	'after_widget' => "</aside></div>",
+	 
+	'before_title' => '<h3>',
+	 
+	'after_title' => '</h3>',
+ 
+) );
+}

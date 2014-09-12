@@ -53,8 +53,15 @@ get_header();
 				</div>
 			</div>
 		</div><!--news -->
-	</div>
-	<div class="box"></div>
+	</div><!-- company things -->
+	<div class="box">
+		<div class="produ">
+			<div class="n_header"><div class="time_new">产品展示</div><div class="more">+</div></div>
+			<div class="pic">
+				<img src="<?php bloginfo('template_directory'); ?>/img/npic.jpg" alt="" width="119" height=92 class="picborder" />
+			</div><!-- pic -->
+		</div><!-- produ -->
+	</div><!-- product -->
 </div><!-- show body -->
 
 <div class="clr"></div>
