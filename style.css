@@ -70,7 +70,7 @@ body{background:#f5edd8;}
 .main .mbody .n_body{margin-top:10px;overflow:hidden;}
 .main .mbody .n_body .pic{float:left;}
 .main .mbody .n_body .pic a{ float:left; }
-.main .mbody .n_body img{border:1px solid #e6daa7;padding:4px;margin-right:11px;display:inline;}
+.main .mbody .n_body img{border:1px solid #e6daa7;padding:4px;margin-right:11px;display:inline;width:130px;height:130px;}
 .main .mbody .n_body .info{float:left;}
 .main .mbody .n_body .info li{padding:4px 0 4px;font-size:12px;}
 
