@@ -58,7 +58,7 @@ get_header();
 			<div class="n_header"><div class="time_new">产品展示</div><div class="more">+</div></div>
 			<div class="n_body">
 				<div class="pic">
-					<?php query_posts('cat=12&posts_per_page=3'); while(have_posts()): the_post(); ?>
+					<?php query_posts('cat=6&posts_per_page=3'); while(have_posts()): the_post(); ?>
 					<a href="<?php the_permalink(); ?>" >
 						<?php the_post_thumbnail('thumbnail');  ?>
 					</a>
