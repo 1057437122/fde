@@ -84,7 +84,8 @@ body{background:#f5edd8;}
 .cat_body .cat_index{float:left;overflow:hidden;width:230px;background:url(./img/leftbg.jpg);height:300px;}
 .cat_body .cat_index .sub_cats{overflow:hidden;}
 .cat_body .cat_index .sub_cats ul{padding-left:30px;}
-.cat_body .cat_index .sub_cats ul li{padding:5px 0 5px 0;}
+.cat_body .cat_index .sub_cats ul li{padding:5px 0 5px 0;font-size:16px;line-height:20px;}
+
 
 .cat_body .cat_list{float:left;overflow:hidden;padding:10px 0 0 20px;}
 .cat_body .cat_list .list_body{float:left;padding-top:10px;}
@@ -112,9 +113,12 @@ body{background:#f5edd8;}
 .cat_body   .products .pre_view{padding-left:20px;}
 
 /*category for imgs */
-.cat_body .cat_list .list_body ul .cont_img{width:150px;float:left;}
+.cat_body .cat_list .list_body ul .cont_img{width:150px;float:left;border:solid 1px #fff;margin-right:5px;}
+.cat_body .cat_list .list_body ul .cont_img:hover{border:solid 1px pink;}
+.cat_body .cat_list .list_body ul li:last-child{margin-right:0;}
 .cat_body .cat_list .list_body ul .cont_img .thumbnail{}
 .cat_body .cat_list .list_body ul .cont_img .thumbnail .pic{padding:10px;width:130px;height:130px;overflow:hidden;}
+.cat_body .cat_list .list_body ul .cont_img .thumbnail .pic img{width:130px;height:130px;}
 
 .cat_body .cat_list .list_body ul .cont_img .intro .pro_name{text-align:center;}
 .cat_body .cat_list .list_body ul .cont_img .intro .pro_info{}
@@ -183,4 +187,4 @@ body{background:#f5edd8;}
 #minImg li {width: 70px;height: 70px;overflow: hidden;background: #ccc;margin-bottom: 10px;border: 2px solid #fff;cursor: pointer;list-style: none;}
 #minImg li:last{margin-bottom:none;}
 #minImg li:hover{border:2px solid red;}
-#minImg li.lastChild {margin-bottom: 0;}
+#minImg li.last-child {margin-bottom: 0;}
