@@ -22,6 +22,7 @@ font-size: 100%;
 vertical-align: baseline;
 text-decoration:none;
 }
+div, dl, dt, dd, ul, ol, li{zoom:1;}
 /* HTML5 display-role reset for older browsers */
 article, aside, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section {display: block;}
@@ -63,12 +64,13 @@ body{background:#f5edd8;}
 .mbody{padding:0 10px;overflow:hidden;width:969px;float:left;}
 .main .mbody .box{width:50%;float:left;}
 .main .mbody .box .news{}
-.main .mbody .n_header{overflow:hidden;border-bottom:solid 1px grey;padding:0 20px 5px;}
+.main .mbody .n_header{overflow:hidden;border-bottom:solid 1px grey;padding:0 20px 5px;margin: 0 5px 0 0;}
 .main .mbody .time_new{float:left;}
 .main .mbody .more{color:red;font-size:16px;float:right;}
 .main .mbody .n_body{margin-top:10px;overflow:hidden;}
 .main .mbody .n_body .pic{float:left;}
-.main .mbody .n_body .picborder{border:1px solid #e6daa7;padding:4px;margin-right:11px;display:inline;}
+.main .mbody .n_body .pic a{ float:left; }
+.main .mbody .n_body img{border:1px solid #e6daa7;padding:4px;margin-right:11px;display:inline;}
 .main .mbody .n_body .info{float:left;}
 .main .mbody .n_body .info li{padding:4px 0 4px;font-size:12px;}
 
@@ -114,7 +116,7 @@ body{background:#f5edd8;}
 .cat_body .cat_list .list_body ul .cont_img .thumbnail{}
 .cat_body .cat_list .list_body ul .cont_img .thumbnail .pic{padding:10px;width:130px;height:130px;overflow:hidden;}
 
-.cat_body .cat_list .list_body ul .cont_img .intro .pro_name{}
+.cat_body .cat_list .list_body ul .cont_img .intro .pro_name{text-align:center;}
 .cat_body .cat_list .list_body ul .cont_img .intro .pro_info{}
 
 /* tabs for product param */
@@ -130,6 +132,11 @@ body{background:#f5edd8;}
 .product_param .container_body .cur_sub ul li{padding:10px;border-left:solid 1px #cfc8c8;border-right:solid 1px #cfc8c8;border-bottom:solid 1px #cfc8c8;}
 .product_param .container_body .cur_sub ul li span{font-size:16px;width: 140px;text-align: right;}
 .product_param .container_body .cur_sub ul li .post-meta-key{}
+.product_param .container_body .cur_sub table{width:100%;}
+.product_param .container_body .cur_sub table tr{}
+.product_param .container_body .cur_sub table tr td{border:#ddd solid 1px;padding:10px 5px;}
+.product_param .container_body .cur_sub table tr td.tit{text-align:right;width:140px;background:#F6F6F6;}
+
 
 /*footer*/
 .footer{padding-top:40px;float:left;overflow:hidden;background:url(./img/pagebk.png);padding-left:7px;width:100%;}
@@ -157,6 +164,7 @@ body{background:#f5edd8;}
 .slides .slides_container{width:968px; height:330px; overflow:hidden}
 .slides .caption{width:968px; height:90px; position:absolute; left:0; bottom:-90px;}
 .slides .cap{height:90px; background:rgba(0,0,0,0.5); background:#000\9; filter:alpha(opacity=50)}
+.slides .cap a{display:inline;}
 .slides .caption h2{font-size:16px; padding:10px 0 5px 15px; position:relative}
 .slides .caption h2 a{color:#FFF}
 .slides .caption h2 span{margin-right:8px; padding:3px 6px; background:#EA84BA; font-size:12px; color:#FFF;display:inline;}

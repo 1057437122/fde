@@ -95,5 +95,18 @@ if(function_exists('register_sidebar_widget')){
 	 
 	'after_title' => '</h3>',
  
-) );
+	) );
 }
+
+function leezlog($str){
+	$fil=get_stylesheet_directory().'/cache/error.log';
+	$log_file=fopen($fil,'a+');
+	$t=time();
+	$logstr=$t.'--'.$str;
+	fwrite($log_file,$logstr);
+	fwrite($log_file,"\r\n");
+	fclose($log_file);
+}
+
+include_once( 'func/meta_box.php' );
+include_once( 'func/tools.php' );

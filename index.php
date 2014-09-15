@@ -35,18 +35,17 @@ get_header();
 
 <div class="clr"></div>
 
-
 <div class="mbody">
 	<div class="box">
 		<div class="news">
 			<div class="n_header"><div class="time_new">公司动态</div><div class="more">+</div></div>
 			<div class="n_body">
 				<div class="pic">
-					<img src="<?php bloginfo('template_directory'); ?>/img/npic.jpg" alt="" width="119" height=92 class="picborder" /><!-- get one post from the news -->
+					<img src="<?php bloginfo('template_directory'); ?>/img/npic.jpg" alt="" width="130" height="130" class="picborder" /><!-- get one post from the news -->
 				</div>
 				<div class="info">
 					<ul>
-						<?php query_posts('cat=1&posts_per_page=5'); while(have_posts()): the_post(); ?>   
+						<?php query_posts('cat=1&posts_per_page=7'); while(have_posts()): the_post(); ?>   
 						<li><a href="<?php the_permalink();?>"><div class="dot">-</div><?php the_title();?></a></li>   
 						<?php endwhile; wp_reset_query(); ?>   
 					</ul>
@@ -57,9 +56,15 @@ get_header();
 	<div class="box">
 		<div class="produ">
 			<div class="n_header"><div class="time_new">产品展示</div><div class="more">+</div></div>
-			<div class="pic">
-				<img src="<?php bloginfo('template_directory'); ?>/img/npic.jpg" alt="" width="119" height=92 class="picborder" />
-			</div><!-- pic -->
+			<div class="n_body">
+				<div class="pic">
+					<?php query_posts('cat=12&posts_per_page=3'); while(have_posts()): the_post(); ?>
+					<a href="<?php the_permalink(); ?>" >
+						<?php the_post_thumbnail('thumbnail');  ?>
+					</a>
+					<?php endwhile; wp_reset_query(); ?>
+				</div><!-- pic -->
+			</div><!-- nbody -->
 		</div><!-- produ -->
 	</div><!-- product -->
 </div><!-- show body -->

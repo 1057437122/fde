@@ -5,7 +5,7 @@ get_header();
 
 <div class="cat_header">
 	<div class="cat_pic"  >
-		<img src="<?php bloginfo('template_directory'); ?>/img/cat_<?php the_category_ID(); ?>.png" alt="" />
+		<img src="<?php echo get_cat_img(); ?>" alt="" />
 	</div><!--cat pic-->
 </div>
 

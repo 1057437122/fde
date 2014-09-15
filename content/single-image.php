@@ -19,6 +19,7 @@
 			</div>
 		</div><!-- zoomWarp-->
 	</div><!--pre view-->
+	
 	<div class="product_param">
 		<div class="container_header">
 			<ul>
@@ -28,7 +29,28 @@
 		</div><!--container header -->
 		<div class="container_body">
 			<div class="sub_con cur_sub"><?php the_content(); ?></div>
-			<div class="sub_con"><?php the_meta(); ?></div>
+			<?php $metas=get_post_meta($post->ID); ?>
+			<div class="sub_con">
+				<table>
+					<tr>
+						<td class="tit">产品描述</td>
+						<td><?php echo $metas['_meta_des_value'][0]; ?></td>
+					</tr>
+					<tr>
+						<td class="tit">产品规格</td>
+						<td><?php echo $metas['_meta_spec_value'][0]; ?></td>
+					</tr>
+					<tr>
+						<td class="tit">型号</td>
+						<td><?php echo $metas['_meta_mod_value'][0]; ?></td>
+					</tr>
+					<tr>
+						<td class="tit">产地</td>
+						<td><?php echo $metas['_meta_area_value'][0]; ?></td>
+					</tr>
+				</table>
+	
+			</div><!-- sub con -->
 		</div><!--container body -->
 	</div><!-- parameters -->
 		
