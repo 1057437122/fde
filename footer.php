@@ -9,8 +9,8 @@
 		<?php if (is_active_sidebar('sidebar-1')){dynamic_sidebar( 'sidebar-1' );} ?>
 	</div><!--link-->
 	<div class="police">
-		<div class="cominfo">版权所有 山东东阿阿胶股份有限公司版权所有 鲁ICP备05035033号</div>
-		<div class="">Copyright 2008 donggeejiao.com All Rights Reserved 站长统计站长统计</div>
+		<div class="cominfo">版权所有 济南万福金安贸易有限公司 鲁ICP备14016977号</div>
+		<div class="">Copyright 2014 jnwfja.com All Rights Reserved </div>
 	</div><!--police -->
 </div><!--footer-->
 <div class="clr"></div>

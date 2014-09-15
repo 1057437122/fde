@@ -1,6 +1,6 @@
 ﻿<?php 
 //this is for the post metas
-
+// meta array 
 $product_meta_box=array(
 	"model"=>array(
 		"name"=>"_meta_mod",
@@ -24,6 +24,7 @@ $product_meta_box=array(
 	),
 	
 );
+//the style for the metas show in the admin page 
 function set_pro_meta(){
 	global $post,$product_meta_box;
 	foreach($product_meta_box as $meta){
@@ -36,13 +37,14 @@ function set_pro_meta(){
 		echo '<input style="width:70%;" name="'.$meta['name'].'_value" value='.$meta_box_value.'> <br />'; 
 	}
 }
+//add to admin menu 
 function create_meta_box(){
 	global $theme_name;
 	if(function_exists('add_meta_box')){
 		add_meta_box('product_meta_box',__('产品参数'),'set_pro_meta','post','normal','high');
 	}
 }
-
+// save metas when add or update post 
 function save_post_meta(){
 	global $post,$product_meta_box;
 	foreach($product_meta_box as $meta){

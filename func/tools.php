@@ -1,5 +1,6 @@
 <?php
 //tools for the function 
+//get the image for different categories with the name of "cat_"+ID(create an image for the category and named it with "cat_"+ID)
 function get_cat_img(){
 	$cat_id=the_category_ID(FALSE);
 	$uri=get_stylesheet_directory_uri();

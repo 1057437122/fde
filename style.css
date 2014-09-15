@@ -148,7 +148,7 @@ body{background:#f5edd8;}
 .footer .link .widget ul{}
 .footer .link .widget ul li {display:block;float:left;padding:2px 10px;}
 
-.footer .police{padding:20px 60px;font-size:12px;line-height:13px;}
+.footer .police{padding:10px 60px;font-size:12px;line-height:22px;color:#999;}
 
 .downleft {float:left;width:25px;height:31px;}
 .downmid{float:left;background:url(./img/downmid.gif);width:952px;height:31px;}
