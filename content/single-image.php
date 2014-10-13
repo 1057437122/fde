@@ -17,6 +17,9 @@
 			<div id="smallwarp">
 				<img src="<?php echo $ret[0]; ?>" id="smallImg" zoom="<?php echo $ret[0]; ?>"/>
 			</div>
+			<div class="buynowbox">
+				<a href=""><div class="buynow">立即购买</div></a>
+			</div><!-- buy now -->
 		</div><!-- zoomWarp-->
 	</div><!--pre view-->
 	

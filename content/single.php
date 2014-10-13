@@ -18,6 +18,9 @@
 			
 			<?php if(have_posts()) : ?><?php while(have_posts()) : the_post(); ?>
 				<div class="content">
+					<div class="cont_tit">
+						<?php the_title();?>
+					</div>
 					<div class="cont_info">
 						<div class="author"><?php the_author(); ?></div>
 						<div class="date"><?php the_date('Y-m-d'); ?></div>

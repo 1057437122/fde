@@ -66,8 +66,8 @@
                     "float":"left",
                     "border":"1px solid #c00",
                     "display":"none",
-                    "width":"384px",
-                    "height":"350px",
+                    "width":"380px",
+                    "height":"380px",
                     "overflow":"hidden",
                     "position":"relative",
                     "z-index":"100"

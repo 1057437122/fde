@@ -22,6 +22,11 @@ $product_meta_box=array(
 		"std"=>__("无特殊描述"),
 		"title"=>__("产品描述")
 	),
+	"tblink"=>array(
+		"name"=>"_meta_link",
+		"std"=>__("淘宝店链接"),
+		"title"=>__("淘宝店链接")
+	)
 	
 );
 //the style for the metas show in the admin page 
@@ -61,13 +66,10 @@ function save_post_meta(){
 		$data=$_POST[$meta['name'].'_value'];
 		
 		if(get_post_meta($post->ID,$meta['name'].'_value') == ""){
-			leezlog('addthing');
 			add_post_meta($post->ID,$meta['name'].'_value',$data,TRUE);
 		}elseif($data!=get_post_meta($post->ID,$meta['name'].'_value',TRUE)){
-			leezlog('update data:'.$post->ID.$meta['name'].'_value');
 			update_post_meta($post->ID,$meta['name'].'_value',$data);
 		}elseif($data==""){
-			leezlog('delete');
 			delete_post_meta($post->ID,$meta['name'].'_value',get_post_meta($post->ID,$meta['name'].'_value',TRUE));
 		}
 	}

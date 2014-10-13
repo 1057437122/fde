@@ -110,3 +110,4 @@ function leezlog($str){
 
 include_once( 'func/meta_box.php' );
 include_once( 'func/tools.php' );
+include_once( 'func/img_meta.php' );
