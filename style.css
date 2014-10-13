@@ -93,6 +93,7 @@ body{background:#f5edd8;}
 .cat_body .cat_list .list_body ul li{border-bottom:1px #cdcdcd dashed;width:702px;}
 .cat_body .cat_list .list_body ul li .date{float:left;width:120px;}
 .cat_body .cat_list .list_body .content{width:702px;color:#666666;}
+.cat_body .cat_list .list_body .content .cont_tit{text-align:center;font-size: 20px;padding-bottom: 12px;}
 .cat_body .cat_list .list_body .content .cont_title{font-weight:bold;padding-bottom:10px;font-size:20px;text-align:center;}
 .cat_body .cat_list .list_body .content .cont_info{padding-left:250px;padding-top:5px;border-top:1px #cdcdcd dashed;text-align:center;}
 .cat_body .cat_list .list_body .content .cont_info .author{float:left;padding-right:20px;}
