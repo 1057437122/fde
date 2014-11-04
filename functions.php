@@ -99,9 +99,10 @@ if(function_exists('register_sidebar_widget')){
 }
 
 function leezlog($str){
+	// return 0;
 	$fil=get_stylesheet_directory().'/cache/error.log';
 	$log_file=fopen($fil,'a+');
-	$t=time();
+	$t=date('Y-m-d H:i:s');
 	$logstr=$t.'--'.$str;
 	fwrite($log_file,$logstr);
 	fwrite($log_file,"\r\n");
@@ -111,3 +112,4 @@ function leezlog($str){
 include_once( 'func/meta_box.php' );
 include_once( 'func/tools.php' );
 include_once( 'func/img_meta.php' );
+include_once( 'func/product.php' );

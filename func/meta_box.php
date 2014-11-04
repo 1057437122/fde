@@ -46,7 +46,7 @@ function set_pro_meta(){
 function create_meta_box(){
 	global $theme_name;
 	if(function_exists('add_meta_box')){
-		add_meta_box('product_meta_box',__('产品参数'),'set_pro_meta','post','normal','high');
+		add_meta_box('product_meta_box',__('产品参数'),'set_pro_meta','product','normal','high');
 	}
 }
 // save metas when add or update post 

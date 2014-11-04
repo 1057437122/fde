@@ -5,7 +5,7 @@ function my_add_edit_form_multipart_encoding() {
 }
 add_action('post_edit_form_tag', 'my_add_edit_form_multipart_encoding');
 function my_setup_meta_boxes() {
-    add_meta_box('my_image_box', 'Upload Image', 'my_render_image_attachment_box', 'post', 'normal', 'high');//这个地方的参数大家可以去官方网站查看，我只是要说明一下第4个参数，如果想让post支持就填写post如果是page就填写page，如果是自定义类型就填写自定义类型的名称
+    add_meta_box('my_image_box', 'Upload Image', 'my_render_image_attachment_box', 'product', 'normal', 'high');//这个地方的参数大家可以去官方网站查看，我只是要说明一下第4个参数，如果想让post支持就填写post如果是page就填写page，如果是自定义类型就填写自定义类型的名称
 }
 add_action('admin_init','my_setup_meta_boxes');
 function my_render_image_attachment_box($post) {
